@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Russo+One&display=swap');
+
+:root {
+    --primary-color-text: #A9A9A9;
+    --primary-color-headlines: #D5BFDF;
+    --primary-color-buttons: #FDFBD2;
+    --primary-color-background: #fcf7f7;
+    --primary-color-text-dark: #7A7777;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+.container {
+    width: 100%;
+    color: var(--primary-color-text);
+    background-color: var(--primary-color-background);
+}
+
+.menu {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.page-menu {
+    justify-self: end;
+}
+
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    width: 65px;
+    height: 58px;
+    justify-content: space-between;
+    align-items: center;
+    border: 3px solid var(--primary-color-headlines);
+    border-radius: 10px;
+    background-color: var(--primary-color-buttons);
+    margin: 15px;
+}
+
+.line {
+    width: 39px;
+    height: 5px;
+    background-color: var(--primary-color-headlines);
+    border-radius: 10px;
+    margin: 7px 0;
+}
+
+.logo-span {
+    display: inline-block;
+    margin: 25px;
+    font-weight: 900;
+    font-size: 32px;
+    color: var(--primary-color-headlines);
+}
+
+.profile {
+    text-align: center;
+}
+
+.profile-image img {
+    display: inline-block;
+    width: 171px;
+    height: 171px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 25px;
+}
+
+hr {
+    width: 151px;
+    height: 12px;
+    background-color: var(--primary-color-headlines);
+    border-radius: 7px;
+    border: none;
+}
+
+.headline h3 {
+    font-family: "Russo One", sans-serif;
+    font-size: 32px;
+    text-align: center;
+    color: var(--primary-color-headlines);
+    margin: 0;
+}
+
+.frame {
+    width: 100%;
+    text-align: center;
+}
+
+.frame img {
+    display: inline-block;
+    width: 296px;
+    height: 165px;
+    object-fit: cover;
+    margin: 22px;
+}
+
+.my-clients {
+    width: 100%;
+}
+
+.card {
+    width: 100%;
+    text-align: center;
+    margin-top: 24px;
+}
+
+.card h4 {
+    font-family: "Russo One", sans-serif;
+    font-size: 24px;
+    margin: 5px;
+}
+
+.card span {
+    display: inline-block;
+    color: var(--primary-color-text-dark);
+    background-color: var(--primary-color-headlines);
+    opacity: 0.5;
+    padding: 4px;
+    margin-bottom: 5px;
+}
+
+.card p {
+    margin: 15px;
+}
+
+.contact {
+    width: 100%;
+    text-align: center;
+    padding-top: 32px;
+}
+
+.contact button {
+    border: none;
+    text-transform: uppercase;
+    font-size: 24px;
+    background-color: var(--primary-color-buttons);
+    padding: 15px 51px;
+    color: var(--primary-color-headlines);
+    margin: 32px;
+}
+
+.social-media {
+    width: 100%;
+    text-align: center;
+    padding-top: 48px;
+}
+
+.social-media-icons ul {
+    list-style: none;
+    padding: 0;
+}
+
+.social-media-icons ul li {
+    display: inline-block;
+    margin: 19px;
+}
+
+footer {
+    text-align: center;
+    padding-top: 48px;
+}
