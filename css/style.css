@@ -168,3 +168,173 @@ footer {
     text-align: center;
     padding-top: 48px;
 }
+
+@media (min-width: 600px) and (max-width: 1024px) {
+    .hamburger {
+        display: none;
+    }
+
+    .menu {
+        grid-template-columns: 1fr 2fr;
+        align-items: center;
+    }
+
+    .menu-list ul {
+        list-style: none;
+        padding: 0;
+        text-transform: uppercase;
+        font-size: 24px;
+        font-weight: 700;
+        color: var(--primary-color-text-dark);
+    }
+
+    .menu-list ul li {
+        display: inline-block;
+        margin-right: 14px;
+    }
+
+    .profile {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+
+    .profile-image img {
+        width: 264px;
+        height: 264px;
+    }
+
+    .profile-learn-more {
+        display: grid;
+        align-items: center;
+        justify-content: start;
+    }
+
+    .profile-details span {
+        display: block;
+        width: 284px;
+        font-size: 36px;
+        text-align: start;
+        margin-left: 24px;
+        font-weight: 300;
+    }
+
+    .profile-details button {
+        display: block;
+        background-color: var(--primary-color-buttons);
+        color: var(--primary-color-headlines);
+        font-size: 24px;
+        width: 264px;
+        border: none;
+        padding: 14px 20px;
+        margin-left: 24px;
+        margin-top: 10px;
+        border-radius: 10px;
+    }
+
+    .my-works .frame {
+        display: none;
+    }
+
+    hr {
+        margin-left: 32px;
+    }
+
+    .headline h3 {
+        padding-left: 32px;
+        text-align: start;
+    }
+
+    .gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3, auto);
+        gap: 10px;
+        margin-top: 32px;
+    }
+
+    .gallery-item {
+        text-align: center;
+    }
+
+    .gallery img {
+        width: 377px;
+        height: 210px;
+        object-fit: cover;
+    }
+
+    .my-clients {
+        margin-top: 48px;
+    }
+
+    .my-clients p {
+        width: 345px;
+        margin: 15px auto;
+    }
+
+    .card {
+        margin-top: 48px;
+    }
+
+    .btn-contact {
+        display: none;
+    }
+
+    .contact-intro {
+        width: 100%;
+    }
+
+    .contact-intro p {
+        width: 443px;
+        text-align: start;
+        margin-left: 32px;
+    }
+
+    .contact-form {
+        width: 100%;
+        font-size: 20px;
+    }
+
+    .contact-form form {
+        text-align: start;
+        box-sizing: border-box;
+        padding: 32px;
+    }
+
+    input, textarea {
+        width: 100%;
+        background-color: var(--primary-color-buttons);
+
+    }
+
+    input {
+        height: 34px;
+    }
+
+    .contact-form button {
+        background-color: var(--primary-color-headlines);
+        color: var(--primary-color-background);
+        text-transform: none;
+        margin-left: 0;
+    }
+
+    .contact-details {
+        width: 100%;
+    }
+
+    .contact-details ul {
+        list-style: none;
+        padding: 0;
+        text-align: start;
+        margin-left: 32px;
+        font-size: 20px;
+        color: var(--primary-color-headlines);
+    }
+
+    .social-media-icons ul {
+        text-align: start;
+    }
+
+    .social-media-icons ul li {
+        margin-right: 12px;
+    }
+}
