@@ -169,6 +169,38 @@ footer {
     padding-top: 48px;
 }
 
+.menu-list {
+    display: none;
+}
+
+.profile-learn-more {
+    display: none;
+}
+
+.my-works-intro {
+    display: none;
+}
+
+.gallery {
+    display: none;
+}
+
+.contact-form {
+    display: none;
+}
+
+.contact-details {
+    display: none;
+}
+
+#contact-me-headline {
+    display: none;
+}
+
+.contact-intro {
+    display: none;
+}
+
 @media (min-width: 600px) and (max-width: 1024px) {
     .hamburger {
         display: none;
@@ -177,6 +209,12 @@ footer {
     .menu {
         grid-template-columns: 1fr 2fr;
         align-items: center;
+        box-sizing: border-box;
+        padding-right: 24px;
+    }
+
+    .menu-list {
+        display: block;
     }
 
     .menu-list ul {
@@ -190,7 +228,7 @@ footer {
 
     .menu-list ul li {
         display: inline-block;
-        margin-right: 14px;
+        margin-right: 8px;
     }
 
     .profile {
@@ -279,7 +317,12 @@ footer {
         display: none;
     }
 
+    #contact-me-headline {
+        display: block;
+    }
+
     .contact-intro {
+        display: block;
         width: 100%;
     }
 
@@ -290,6 +333,7 @@ footer {
     }
 
     .contact-form {
+        display: block;
         width: 100%;
         font-size: 20px;
     }
@@ -318,6 +362,7 @@ footer {
     }
 
     .contact-details {
+        display: block;
         width: 100%;
     }
 
@@ -349,11 +394,17 @@ footer {
         align-items: center;
     }
 
+    .menu-list {
+        display: block;
+        box-sizing: border-box;
+        padding: 16px;
+    }
+
     .menu-list ul {
         list-style: none;
         padding: 0;
         text-transform: uppercase;
-        font-size: 24px;
+        font-size: 36px;
         font-weight: 700;
         color: var(--primary-color-text-dark);
     }
@@ -502,6 +553,7 @@ footer {
     }
 
     .contact-form {
+        display: block;
         width: 100%;
         font-size: 20px;
         grid-column: 1/2;
@@ -545,7 +597,20 @@ footer {
         margin-left: 0;
     }
 
+    #contact-me-headline {
+        display: block;
+    }
+
+    .contact-intro {
+        display: block;
+        width: 923px;
+        text-align: start;
+        margin-left: 32px;
+    }
+
     .contact-details {
+        display: block;
+        font-size: 24px;
         text-align: start;
         grid-column: 2/3;
         grid-row: 1/2;
